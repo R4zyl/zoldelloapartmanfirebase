@@ -1,0 +1,426 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  background: whitesmoke;
+}
+
+.errormessage {
+  margin-top: 20px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successmessage {
+  color: #2b7515;
+  background: #ecffd6;
+  padding: 5px;
+  border: 1px solid #617c42;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.warningmessage {
+  color: #756e15;
+  background: #fffbd1;
+  padding: 5px;
+  border: 1px solid #87803e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header {
+  background: transparent;
+  max-width: 100vw;
+  min-height: 80px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 0px;
+  margin-top: 10px;
+  min-width: 300px;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.logoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -180px;
+  margin-bottom: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+}
+
+.logoImg img {
+  max-width: 150px;
+}
+
+.mobileLogoImg {
+  display: none;
+}
+
+.logoImg:hover {
+  -webkit-filter: drop-shadow(0px 2px 2px black);
+          filter: drop-shadow(0px 2px 2px black);
+}
+
+.navContainer {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.navholder button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 170%;
+  text-transform: uppercase;
+  color: #00582e;
+}
+
+.navholder button:active {
+  color: #0eb967;
+}
+
+.languageImgDesktop {
+  margin-right: 25px;
+  -webkit-filter: drop-shadow(0px 1.5px 1.5px black);
+          filter: drop-shadow(0px 1.5px 1.5px black);
+}
+
+.languageImgDesktop:hover {
+  -webkit-filter: drop-shadow(0px 3px 3px black);
+          filter: drop-shadow(0px 3px 3px black);
+}
+
+@media only screen and (min-width: 650px) {
+  .navContainer {
+    display: none;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navContainerDesktop {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30vw;
+    min-width: 250px;
+    height: 100vh;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .contactIconsHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    gap: 5px;
+    background: rgba(0, 88, 45, 0.733);
+    padding: 4px;
+    position: absolute;
+    left: 30vw;
+    border-radius: 0px 8px 8px 0px;
+    max-height: 40px;
+    width: 50px;
+  }
+  .contactIconsHolder .phoneNumberDesktop {
+    overflow: hidden;
+    width: 0%;
+    font-weight: 500;
+  }
+  .contactIconsHolder:hover {
+    position: absolute;
+    left: 30vw;
+    border-radius: 0px 8px 8px 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: rgba(0, 88, 45, 0.849);
+  }
+  .contactIconsHolder:hover .phoneNumberDesktop {
+    width: 100%;
+  }
+  button {
+    border: none;
+    background: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 105%;
+    letter-spacing: 4px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+  }
+  button:before, button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+  }
+  button:before {
+    top: 0;
+  }
+  button:after {
+    bottom: 0;
+  }
+  button:hover > * > *:before, button:hover > * > *:after {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  button:hover > * > * > *:before, button:hover > * > * > *:after {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  button > *:before, button > *:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: transparent;
+  }
+  button > *:before {
+    left: 0;
+  }
+  button > *:after {
+    right: 0;
+  }
+  button > * > *:before, button > * > *:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    height: 2px;
+    width: 100%;
+    background-color: #157a49;
+  }
+  button > * > *:before {
+    top: 0;
+    -webkit-transform: translate3d(-105%, 0, 0);
+            transform: translate3d(-105%, 0, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  button > * > *:after {
+    bottom: 0;
+    -webkit-transform: translate3d(105%, 0, 0);
+            transform: translate3d(105%, 0, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  button > * > * > *:before, button > * > * > *:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 2px;
+    background-color: #157a49;
+  }
+  button > * > * > *:before {
+    left: 0;
+    -webkit-transform: translate3d(0, 105%, 0);
+            transform: translate3d(0, 105%, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  button > * > * > *:after {
+    right: 0;
+    -webkit-transform: translate3d(0, -105%, 0);
+            transform: translate3d(0, -105%, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  button:hover {
+    color: #157a49;
+  }
+  button:active {
+    color: #0eb967;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    background: #00582e;
+    background: -webkit-gradient(linear, left top, right top, color-stop(66%, #00582e), color-stop(90%, #157a49));
+    background: linear-gradient(90deg, #00582e 66%, #157a49 90%);
+    -webkit-box-shadow: 0px 3px 5px 0px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 3px 5px 0px #000000, 5px 5px 5px 5px rgba(0, 0, 0, 0);
+    margin: 0px;
+  }
+  .contactIconsHolder {
+    display: none;
+  }
+  .languageImgDesktop {
+    display: none;
+  }
+  .languageImg {
+    margin-left: -10px;
+  }
+  .menuImg {
+    -webkit-filter: drop-shadow(0px 2.5px 2.5px black);
+            filter: drop-shadow(0px 2.5px 2.5px black);
+  }
+  .navContainerDesktop {
+    display: none;
+  }
+  .mobileLogoImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    width: 70px;
+    max-width: 63px;
+  }
+  .mobileLogoImg img {
+    max-width: 63px;
+    -webkit-filter: drop-shadow(0px 1.5px 1.5px black);
+            filter: drop-shadow(0px 1.5px 1.5px black);
+  }
+  .mobileLogoImg:hover {
+    -webkit-filter: drop-shadow(0px 3px 3px white);
+            filter: drop-shadow(0px 3px 3px white);
+  }
+}
+
+@media only screen and (max-width: 1151px) {
+  .navContainerDesktop button {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .navContainerDesktop button {
+    margin-left: 2vw;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .navContainerDesktop button {
+    font-size: 90%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .contactIconsHolder {
+    display: none;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

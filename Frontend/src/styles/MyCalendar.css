@@ -1,0 +1,286 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  background: whitesmoke;
+}
+
+.errormessage {
+  margin-top: 20px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successmessage {
+  color: #2b7515;
+  background: #ecffd6;
+  padding: 5px;
+  border: 1px solid #617c42;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.warningmessage {
+  color: #756e15;
+  background: #fffbd1;
+  padding: 5px;
+  border: 1px solid #87803e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+div.fc-event-title-container {
+  text-align: center;
+}
+
+.calendarContainer {
+  padding: 50px;
+  margin-bottom: 10vh;
+}
+
+div.fc-header-toolbar.fc-toolbar {
+  color: #00582e;
+}
+
+button.fc-prev-button.fc-button.fc-button-primary {
+  background: #00582e;
+}
+
+button.fc-prev-button.fc-button.fc-button-primary:hover {
+  background: #157a49;
+}
+
+button.fc-prev-button.fc-button.fc-button-primary:active {
+  background: #0eb967;
+}
+
+button.fc-next-button.fc-button.fc-button-primary {
+  background: #00582e;
+}
+
+button.fc-next-button.fc-button.fc-button-primary:hover {
+  background: #157a49;
+}
+
+button.fc-next-button.fc-button.fc-button-primary:active {
+  background: #0eb967;
+}
+
+button.fc-today-button.fc-button.fc-button-primary {
+  background: #00582e;
+}
+
+button.fc-today-button.fc-button.fc-button-primary:hover {
+  background: #157a49;
+}
+
+button.fc-today-button.fc-button.fc-button-primary:active {
+  background: #0eb967;
+}
+
+@media only screen and (min-width: 800px) {
+  .calendarOuterContainer {
+    width: 68.5vw;
+    margin-left: 30vw;
+  }
+  .calendarExplainText {
+    margin-left: 50px;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 120%;
+  }
+  .calendarExplainTextWhite {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextWhite .whiteCube {
+    background: white;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+  .calendarExplainTextYellow {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextYellow .yellowCube {
+    background: yellow;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+  .calendarExplainTextRed {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextRed .redCube {
+    background: red;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+  }
+}
+
+span.fc-icon.fc-icon-chevron-left {
+  position: relative;
+}
+
+span.fc-icon.fc-icon-chevron-right {
+  position: relative;
+}
+
+@media only screen and (max-width: 799px) and (min-width: 630px) {
+  .calendarOuterContainer {
+    width: 68.5vw;
+    margin-left: 30vw;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  .calendarExplainText {
+    margin-left: 15px;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 120%;
+  }
+  .calendarExplainTextWhite {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextWhite .whiteCube {
+    background: white;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 8px;
+  }
+  .calendarExplainTextYellow {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextYellow .yellowCube {
+    background: yellow;
+    border: 1px solid black;
+    min-width: 35px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    min-height: 35px;
+    margin-right: 8px;
+  }
+  .calendarExplainTextRed {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calendarExplainTextRed .redCube {
+    background: red;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    min-width: 35px;
+    min-height: 35px;
+    margin-right: 8px;
+  }
+}
+/*# sourceMappingURL=MyCalendar.css.map */

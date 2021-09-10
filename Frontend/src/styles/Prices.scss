@@ -1,0 +1,39 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.pricingContainer {
+  margin-top: 3vh;
+  margin-bottom: 16vh;
+  margin-left:30vw;
+  font-size:90%;
+  li.tag {
+    font-size:90%;
+    font-weight:600;
+  }
+  button{
+    position:relative;
+    left:-20px;
+  }
+  button:hover{
+    color:white;
+  }
+}
+.explainTextBox {
+  margin-left: 20px;
+  color: $dark-green;
+  font-weight: 500;
+  margin-top:3vh;
+  margin-left:3vw;
+}
+
+@media only screen and (max-width: 630px) { 
+  .pricingContainer{
+    margin-left:auto;
+  margin-right:auto;
+  button{
+    position:relative;
+    left:0px;
+  }
+  }
+}

@@ -1,0 +1,8 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+html,
+body {
+  font-family: $font-family-basic;
+}

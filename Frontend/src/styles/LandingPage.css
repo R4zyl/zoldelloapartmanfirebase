@@ -1,0 +1,422 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  background: whitesmoke;
+}
+
+.errormessage {
+  margin-top: 20px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successmessage {
+  color: #2b7515;
+  background: #ecffd6;
+  padding: 5px;
+  border: 1px solid #617c42;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.warningmessage {
+  color: #756e15;
+  background: #fffbd1;
+  padding: 5px;
+  border: 1px solid #87803e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 800px) {
+  .landingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    gap: 5vh;
+    max-width: 70vw;
+    margin-left: 30vw;
+  }
+  .landingContainer img {
+    width: 20vw;
+    margin-right: 70px;
+    margin-left: 3vw;
+    margin-top: 8vh;
+    border-radius: 4px;
+    -webkit-box-shadow: 45px -35px 0px 1px rgba(0, 88, 45, 0.637);
+            box-shadow: 45px -35px 0px 1px rgba(0, 88, 45, 0.637);
+  }
+  .landingContainer img:hover {
+    -webkit-filter: grayscale(1) brightness(80%);
+            filter: grayscale(1) brightness(80%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  }
+  .landingContainer .landingTextBox {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 6vw;
+    margin-top: 7vh;
+    margin-right: 1vw;
+    gap: 5vh;
+    font-weight: 500;
+    width: 90vw;
+    text-align: left;
+    font-size: 150%;
+    color: black;
+  }
+  .landingContainer .landingTextBox button {
+    margin-top: 10vh;
+    background: rgba(0, 88, 45, 0.808);
+    color: white;
+    margin-left: 0px;
+    font-weight: 300;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-size: 80%;
+  }
+  .landingContainer .landingTextBox button:hover {
+    background: rgba(0, 88, 45, 0.993);
+  }
+  .landingContainer .landingTextBox button:active {
+    background: #044e2a;
+  }
+  .landingContainer .landingTextBox .landingTitle {
+    text-shadow: 1px 1px 0px #000000;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    font-size: 240%;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 6vh;
+    margin-top: 13vh;
+  }
+  .landingContainer .landingTextBox .landingTitleFirst {
+    color: #00582e;
+    font-weight: 700;
+    font-size: 140%;
+  }
+  .landingContainer .landingTextBox .landingText {
+    font-size: 80%;
+  }
+}
+
+.landingContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70vw;
+  margin-left: 30vw;
+}
+
+.landingContainer2 .landingText2 {
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 46.5vh;
+  width: 400px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 130%;
+}
+
+.landingImgContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 40vw;
+  margin-top: 3vh;
+  margin-left: 30vw;
+}
+
+.landingImgContainer2 .gardenImg {
+  position: absolute;
+  left: 64vw;
+  top: 146vh;
+  -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+          box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+}
+
+.landingImgContainer2 .gardenImg2 {
+  position: relative;
+  left: -12vw;
+  -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+          box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+}
+
+.landingImgContainer2 img:hover {
+  -webkit-filter: grayscale(1) brightness(80%);
+          filter: grayscale(1) brightness(80%);
+  -webkit-transition: -webkit-filter 1s ease-in-out;
+  transition: -webkit-filter 1s ease-in-out;
+  transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+}
+
+.landingContainer3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70vw;
+  margin-left: 30vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landingContainer3 .landingText3 {
+  position: absolute;
+  margin-left: 33vw;
+  margin-top: 42.5vh;
+  width: 400px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 130%;
+}
+
+.landingContainer3 .landingText3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.landingContainer3 .landingImgContainer3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+
+.landingContainer3 .landingImgContainer3 img {
+  -webkit-box-shadow: 10px -20px 0px 1px rgba(0, 88, 45, 0.637);
+          box-shadow: 10px -20px 0px 1px rgba(0, 88, 45, 0.637);
+}
+
+.landingContainer3 .landingImgContainer3 img:hover {
+  -webkit-filter: grayscale(1) brightness(80%);
+          filter: grayscale(1) brightness(80%);
+  -webkit-transition: -webkit-filter 1s ease-in-out;
+  transition: -webkit-filter 1s ease-in-out;
+  transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+}
+
+.mapholder2 {
+  position: relative;
+  left: 35.5vw;
+  top: 1vw;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 88, 45, 0.637);
+          box-shadow: 0px 0px 6px 1px rgba(0, 88, 45, 0.637);
+}
+
+@media only screen and (max-width: 799px) {
+  .mapholder2 {
+    display: none;
+  }
+  .landingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 99vw;
+    gap: 5vh;
+    max-width: 99vw;
+  }
+  .landingContainer img {
+    width: 50vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 15vh;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+  }
+  .landingContainer img:hover {
+    -webkit-filter: grayscale(1) brightness(80%);
+            filter: grayscale(1) brightness(80%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  }
+  .landingContainer button {
+    display: none;
+  }
+  .landingContainer .landingTextBox {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    gap: 5vh;
+    font-weight: 500;
+    width: 90vw;
+    text-align: center;
+    font-size: 80%;
+    color: #00582e;
+    font-family: 'Oswald', sans-serif;
+  }
+  .landingContainer .landingTextBox .landingTitle {
+    text-shadow: 1px 1px 0px #000000;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 190%;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+  .landingContainer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100vw;
+    margin-left: 2vw;
+  }
+  .landingContainer2 .landingText2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33.5vh;
+    width: 90vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 80%;
+  }
+  .landingImgContainer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 40vw;
+    margin-top: 3vh;
+    margin-left: 30vw;
+  }
+  .landingImgContainer2 .gardenImg {
+    position: absolute;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    left: 5vw;
+    top: 110vh;
+    -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+            box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+  }
+  .landingImgContainer2 .gardenImg2 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    position: absolute;
+    left: -15vw;
+    top: 95vh;
+    -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+            box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
+  }
+  .landingImgContainer2 img:hover {
+    -webkit-filter: grayscale(1) brightness(80%);
+            filter: grayscale(1) brightness(80%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  }
+  .landingContainer3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 5vh;
+    margin-left: 0vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .landingContainer3 .landingText3 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27.5vh;
+    width: 90vw;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    margin-left: 2vw;
+  }
+  .landingContainer3 .landingImgContainer3 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  .landingContainer3 .landingImgContainer3 img {
+    padding: 0px;
+    margin: 0px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-box-shadow: 10px -20px 0px 1px rgba(0, 88, 45, 0.637);
+            box-shadow: 10px -20px 0px 1px rgba(0, 88, 45, 0.637);
+  }
+  .landingContainer3 .landingImgContainer3 img:hover {
+    -webkit-filter: grayscale(1) brightness(80%);
+            filter: grayscale(1) brightness(80%);
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+    transition: -webkit-filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  }
+}
+/*# sourceMappingURL=LandingPage.css.map */

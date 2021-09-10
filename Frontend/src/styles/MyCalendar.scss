@@ -1,0 +1,187 @@
+@import './presets';
+@import './variables';
+@import './globals';
+ 
+div.fc-event-title-container {
+  text-align: center;
+}
+
+.calendarContainer {
+  padding: 50px;
+  margin-bottom: 10vh;
+}
+div.fc-header-toolbar.fc-toolbar {
+  color: $dark-green;
+}
+button.fc-prev-button.fc-button.fc-button-primary {
+  background: $dark-green;
+}
+
+button.fc-prev-button.fc-button.fc-button-primary:hover {
+  background: $dark-green-hover;
+}
+
+button.fc-prev-button.fc-button.fc-button-primary:active {
+  background: $dark-green-active;
+}
+
+button.fc-next-button.fc-button.fc-button-primary {
+  background: $dark-green;
+}
+
+button.fc-next-button.fc-button.fc-button-primary:hover {
+  background: $dark-green-hover;
+}
+
+button.fc-next-button.fc-button.fc-button-primary:active {
+  background: $dark-green-active;
+}
+
+button.fc-today-button.fc-button.fc-button-primary {
+  background: $dark-green;
+}
+
+button.fc-today-button.fc-button.fc-button-primary:hover {
+  background: $dark-green-hover;
+}
+
+button.fc-today-button.fc-button.fc-button-primary:active {
+  background: $dark-green-active;
+}
+@media only screen and (min-width: 800px) {
+  .calendarOuterContainer {
+    width:68.5vw;
+    margin-left:30vw;
+  }
+  .calendarExplainText {
+    margin-left: 50px;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 120%;
+  }
+  .calendarExplainTextWhite {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .whiteCube {
+      background: white;
+      border: 1px solid black;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      width: 35px;
+      height: 35px;
+      margin-right: 8px;
+    }
+  }
+  .calendarExplainTextYellow {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .yellowCube {
+      background: yellow;
+      border: 1px solid black;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      width: 35px;
+      height: 35px;
+      margin-right: 8px;
+    }
+  }
+  .calendarExplainTextRed {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .redCube {
+      background: red;
+      border: 1px solid black;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      width: 35px;
+      height: 35px;
+      margin-right: 8px;
+    }
+  }
+}
+
+span.fc-icon.fc-icon-chevron-left {
+  position:relative;
+}
+span.fc-icon.fc-icon-chevron-right {
+  position:relative;
+}
+@media only screen and (max-width: 799px) and (min-width: 630px) {
+  .calendarOuterContainer {
+    width:68.5vw;
+    margin-left:30vw;
+  }
+}
+@media only screen and (max-width: 629px) {
+  .calendarExplainText {
+    margin-left: 15px;
+    margin-top: 40px;
+    color: black;
+    font-weight: 500;
+    font-size: 120%;
+  }
+  .calendarExplainTextWhite {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: black;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .whiteCube {
+      background: white;
+      border: 1px solid black;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      min-width: 35px;
+      min-height: 35px;
+      margin-right: 8px;
+    }
+  }
+  .calendarExplainTextYellow {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .yellowCube {
+      background: yellow;
+      border: 1px solid black;
+      min-width: 35px;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      min-height: 35px;
+      margin-right: 8px;
+    }
+  }
+  .calendarExplainTextRed {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: black;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    .redCube {
+      background: red;
+      box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+      border: 1px solid black;
+      min-width: 35px;
+      min-height: 35px;
+      margin-right: 8px;
+    }
+  }
+}

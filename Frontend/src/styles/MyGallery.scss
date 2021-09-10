@@ -1,0 +1,248 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7vh;
+  gap: 17px;
+}
+.smallContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.galleryContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  gap: 17px;
+}
+.smallContainer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.imgContainer {
+  filter: grayscale(1) brightness(40%);
+  transition: filter 1s ease-in-out;
+  img {
+    max-width: 80vw;
+  }
+}
+
+.imgContainer:hover {
+  filter: none;
+}
+
+.imgContainer:active {
+  filter: none;
+}
+
+.lowerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 12vh;
+  gap: 17px;
+}
+.smallContainer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.imgContainer {
+  filter: grayscale(1) brightness(40%);
+  transition: filter 1s ease-in-out;
+  img {
+    max-width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .galleryContainer {
+    margin: 10px;
+    margin-right: 25px;
+    width:60vw;
+    margin-left:35vw;
+    display: grid;
+    grid-template-columns: 49.5% 47.9%;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 'bigImg smallImgContainer';
+  }
+  .bigImg {
+    display: flex;
+    grid-area: bigImg;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .smallContainer {
+    grid-area: smallImgContainer;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    gap: 15px 15px;
+    grid-template-areas:
+      'smallImg smallImg2'
+      'smallImg3 smallImg4';
+  }
+
+  .smallImg {
+    display: flex;
+    grid-area: smallImg;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .smallImg2 {
+    display: flex;
+    grid-area: smallImg2;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+
+  .smallImg3 {
+    display: flex;
+    grid-area: smallImg3;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+
+  .smallImg4 {
+    display: flex;
+    grid-area: smallImg4;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+
+  .galleryContainer2 {
+  
+    margin-top: 0px;
+    width:60vw;
+    margin-left:35vw;
+    display: grid;
+    grid-template-columns: 47.2% 48.7%;
+    grid-template-rows: auto;
+    gap: 25px;
+
+    grid-template-areas: 'smallImgContainer2 bigImg2';
+  }
+  .bigImg2 {
+    margin-right:-15px;
+    display: flex;
+    grid-area: bigImg2;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .smallContainer2 {
+    grid-area: smallImgContainer2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    gap: 15px 15px;
+    grid-template-areas:
+      'smallImg5 smallImg6'
+      'smallImg7 smallImg8';
+  }
+
+  .smallImg5 {
+    display: flex;
+    grid-area: smallImg5;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .smallImg6 {
+    display: flex;
+    grid-area: smallImg6;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+
+  .smallImg7 {
+    display: flex;
+    grid-area: smallImg7;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+
+  .smallImg8 {
+    display: flex;
+    grid-area: smallImg8;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .smallImg5 {
+    display: flex;
+    grid-area: smallImg5;
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+  .lowerContainer {
+    margin: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width:60vw;
+    margin-left:35vw;
+    display: grid;
+    grid-template-columns: 24.35% 24.35% 24.35% 24.35%;
+    grid-template-rows: auto;
+    gap: 8.2px;
+    margin-bottom: 12vh;
+
+    img {
+      transition: all 0.7s ease-in-out;
+    }
+    img:hover {
+      border-radius: 15px;
+    }
+  }
+}

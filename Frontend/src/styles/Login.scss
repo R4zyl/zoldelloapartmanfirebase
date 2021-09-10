@@ -1,0 +1,45 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.loginBox {
+  display: flex;
+  justify-content: center;
+  .loginTitle {
+    color: $dark-green;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 120%;
+  }
+  .loginForm {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+    border: 1.5px solid $dark-green;
+    border-radius: 7px;
+
+    button {
+      border: none;
+      background: none;
+      border: 2px solid $dark-green;
+      padding: 2px;
+      font-size: 90%;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $dark-green;
+    }
+    button:hover {
+      color: white;
+      background: $dark-green-hover;
+      border: 2px solid $dark-green;
+    }
+    button:active {
+      background: $dark-green-active;
+    }
+  }
+}

@@ -1,0 +1,238 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.messageTitle {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 12px;
+  font-weight: 700;
+  color: $dark-green;
+}
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 300px;
+  margin-top: 10%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  box-shadow: $box-shadow-light;
+  padding: 30px;
+  background: rgba(36, 56, 36, 0.158);
+  input {
+    padding: 7px;
+    border: none;
+    color: $dark-green;
+    font-size: 110%;
+    background: white;
+    font-weight: 550;
+  }
+  input:focus {
+    border: 2px solid $dark-green-active;
+  }
+
+  .textBoxInput {
+    padding-bottom: 40%;
+  }
+
+  button {
+    margin-top:20px;
+    background: $dark-green;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 550;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: $box-shadow-light;
+    font-size: 130%;
+    width: fit-content;
+    align-self: flex-end;
+    padding: 10px;
+  }
+
+  button:hover {
+    background: $dark-green-hover;
+  }
+  button:active {
+    background: $dark-green-active;
+  }
+}
+
+.contactFormButton {
+  background: whitesmoke;
+  color: $dark-green;
+  text-transform: uppercase;
+  font-weight: 550;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: $box-shadow-light;
+  font-size: 130%;
+}
+
+@media only screen and (min-width: 800px) {
+  .messageBox {
+    display: flex;
+    justify-content: space-between;
+    width:69.5vw;
+    margin-left:30vw;
+  }
+  .messageTitle {
+    font-size:15px;
+  }
+  .messageForm {
+    width: 40%;
+    height:fit-content;
+    margin: 0px;
+    margin-top: 15vh;
+    margin-right: 2vw;
+    margin-bottom: 0vh;
+    padding: 10px;
+    button{
+      font-size:70%;
+    }
+  }
+  .textBoxInput {
+    padding-bottom:0px;
+    margin-bottom:-20px;
+  }
+  .contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-left: auto;
+    height: fit-content;
+    font-size: 100%;
+    .contactInfoTitle {
+      font-size: 170%;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: $dark-green;
+    }
+    .contactUnderTitle{
+      font-size:72%;
+      color: $dark-green;
+    }
+    .contactEmail {
+      margin-top: 4%;
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 400;
+    }
+    .contactPhoneNumber {
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 400;
+    }
+    .contactAddress {
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 400;
+    }
+    .mapholder {
+      margin-top: 8%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .messageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:30vw;
+  }
+  .messageTitle {
+    font-size: 15px;
+  }
+  .messageForm {
+    width: 40%;
+    margin: 0px;
+    margin-top: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20vh;
+    padding: 30px;
+  }
+  .textBoxInput {
+    padding-bottom: 0px;
+  }
+  .contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    height: fit-content;
+    font-size: 110%;
+    .contactInfoTitle {
+      align-self: center;
+      font-size: 170%;
+      margin-left: 6vw;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: $dark-green;
+    }
+    .contactUnderTitle{
+      margin-left:6vw;
+      margin-top:7px;
+      font-size:80%;
+      color: $dark-green;
+    }
+    .contactEmail {
+      margin-top: 4%;
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 500;
+      font-size:90%;
+    }
+    .contactPhoneNumber {
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 500;
+      font-size:90%;
+    }
+    .contactAddress {
+      display: flex;
+      align-items: center;
+      margin-left: 10%;
+      gap: 15px;
+      color: $dark-green;
+      font-weight: 500;
+      font-size:90%;
+    }
+    .mapholder {
+      margin-top: 8%;
+      display: flex;
+  justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .messageBox {
+    margin-left:auto;
+  }
+}

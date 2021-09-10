@@ -1,0 +1,165 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
+  background: whitesmoke;
+}
+
+.errormessage {
+  margin-top: 20px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.successmessage {
+  color: #2b7515;
+  background: #ecffd6;
+  padding: 5px;
+  border: 1px solid #617c42;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.warningmessage {
+  color: #756e15;
+  background: #fffbd1;
+  padding: 5px;
+  border: 1px solid #87803e;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.adminEventBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.adminEventBox .adminForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  border: 2px solid #00582e;
+  padding: 20px;
+  border-radius: 15px;
+  background: white;
+}
+
+.adminEventBox .adminForm .addEventTitle {
+  color: #00582e;
+  text-transform: uppercase;
+  font-size: 120%;
+}
+
+.adminEventBox .adminForm .colorButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adminEventBox .adminForm .colorButtons .redButton {
+  width: 40px;
+  min-height: 40px;
+  height: auto;
+  background: red;
+}
+
+.adminEventBox .adminForm .colorButtons .redButton:hover {
+  background: #bd0101;
+}
+
+.adminEventBox .adminForm .colorButtons .redButton:active {
+  background: #640000;
+}
+
+.adminEventBox .adminForm .colorButtons .yellowButton {
+  width: 40px;
+  min-height: 40px;
+  height: auto;
+  background: yellow;
+}
+
+.adminEventBox .adminForm .colorButtons .yellowButton:hover {
+  background: #e0e005;
+}
+
+.adminEventBox .adminForm .colorButtons .yellowButton:active {
+  background: #a1a102;
+}
+
+.adminEventBox .adminForm .colorButtons .greenButton {
+  width: 40px;
+  min-height: 40px;
+  height: auto;
+  background: green;
+}
+
+.adminEventBox .adminForm .colorButtons .greenButton:hover {
+  background: #006600;
+}
+
+.adminEventBox .adminForm .colorButtons .greenButton:active {
+  background: #014e01;
+}
+
+.adminEventBox .adminForm .addEventButton {
+  border: none;
+  background: none;
+  border: 2px solid #00582e;
+  padding: 5px;
+  font-size: 115%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #00582e;
+}
+
+.adminEventBox .adminForm .addEventButton:hover {
+  color: white;
+  background: #157a49;
+  border: 2px solid #00582e;
+}
+
+.adminEventBox .adminForm .addEventButton:active {
+  background: #0eb967;
+}
+/*# sourceMappingURL=EventAdder.css.map */
