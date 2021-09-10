@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -66,6 +67,10 @@ body {
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+.languageImg {
+  margin-left: -8px;
+}
+
 .logoImg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,13 +102,28 @@ body {
   top: 10px;
 }
 
+.navholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
 .navholder button {
   background: none;
   border: none;
-  font-weight: 700;
-  font-size: 170%;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 140%;
+  letter-spacing: 1.5px;
   color: #00582e;
+  text-transform: uppercase;
 }
 
 .navholder button:active {

@@ -63,7 +63,7 @@ export function HeaderWhenNotLoggedIn() {
           <MenuItem onClick={handleClose}>
               <HeaderButton 
               />
-              <LanguageSwitcher height="50px" className="languageImg" />
+              <LanguageSwitcher height="40px" className="languageImg" />
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <HeaderButton innerText="Home" onClickEvent={handleHome} />
@@ -82,14 +82,14 @@ export function HeaderWhenNotLoggedIn() {
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <HeaderButton
-                innerText={Translator('Elérhetőség', 'Contact us')}
-                onClickEvent={handleContactus}
+                innerText={Translator('Foglalható dátumok', 'Dates available')}
+                onClickEvent={handleCalendar}
               />
             </MenuItem>
             <MenuItem onClick={handleClose}>
               <HeaderButton
-                innerText={Translator('Foglalható dátumok', 'Dates available')}
-                onClickEvent={handleCalendar}
+                innerText={Translator('Elérhetőség', 'Contact us')}
+                onClickEvent={handleContactus}
               />
             </MenuItem>
           </div>
