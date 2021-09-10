@@ -3,6 +3,8 @@ export * from './Header/Header';
 export * from './Header/HeaderButton';
 export * from './Header/HeaderWhenNotLoggedIn';
 export * from './Header/HeaderWhenLoggedIn';
+export * from './Header/HeaderLoggedInDesktop';
+export * from './Header/HeaderLoggedOutDesktop';
 export * from './Login/Login';
 export * from './LandingPage/LandingPage';
 export * from './Gallery/MyGallery';

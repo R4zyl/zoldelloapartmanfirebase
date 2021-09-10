@@ -7,7 +7,7 @@ import {
   changeLanguageToEngAction,
   changeLanguageToHunAction,
 } from '../../actions';
-import { Translator } from '../index';
+import { Translator,HeaderLoggedOutDesktop } from '../index';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -15,7 +15,6 @@ import '../../styles/Header.css';
 import menuImg from '../../assets/menu.png';
 import engImg from '../../assets/eng.png';
 import hunImg from '../../assets/hun.png';
-import logoImg from '../../assets/logo.png';
 import logoMobile from '../../assets/logoMobile.png';
 import phoneIconDesktop from '../../assets/phoneIconDesktop.png';
 
@@ -140,59 +139,7 @@ export function HeaderWhenNotLoggedIn() {
           alt="logo"
         ></img>
       </div>
-      <div className="navContainerDesktop">
-      <div className="logoImg">
-        <img
-          onClick={handleHome}
-          src={logoImg}
-          height="auto"
-          max-width="70px"
-          alt="logo"
-        ></img>
-      </div>
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>{Translator('Galéria', 'Gallery')}</span>
-              </span>
-            </span>
-          }
-          onClickEvent={handleGallery}
-        />
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>{Translator('Áraink', 'Prices')}</span>
-              </span>
-            </span>
-          }
-          onClickEvent={handlePrices}
-        />
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>{Translator('Elérhetőség', 'Contact us')}</span>
-              </span>
-            </span>
-          }
-          onClickEvent={handleContactus}
-        />
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>
-                  {Translator('Foglalható dátumok', 'Dates available')}
-                </span>
-              </span>
-            </span>
-          }
-          onClickEvent={handleCalendar}
-        />
-      </div>
+        <HeaderLoggedOutDesktop />
       {language === 'hun' ? (
         <img
           className="languageImgDesktop"

@@ -7,6 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import '../../styles/Header.css';
 import menuImg from '../../assets/menu.png';
 import { Translator } from '../index';
+import { HeaderLoggedInDesktop } from '../index';
 import { auth } from '../../firebase';
 
 export const HeaderWhenLoggedIn = () => {
@@ -71,28 +72,7 @@ export const HeaderWhenLoggedIn = () => {
           </div>
         </Menu>
       </div>
-      <div className="navContainerDesktop">
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>{Translator('Foglalás hozzáadása', 'Add booking')} </span>
-              </span>
-            </span>
-          }
-          onClickEvent={handleEvent}
-        />
-        <HeaderButton
-          innerText={
-            <span>
-              <span>
-                <span>{Translator('Kijelentkezés', 'Log out')}</span>
-              </span>
-            </span>
-          }
-          onClickEvent={handleLogOut}
-        />
-      </div>
+      <HeaderLoggedInDesktop />
     </div>
   );
 };
