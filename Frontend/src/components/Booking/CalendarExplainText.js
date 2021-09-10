@@ -7,22 +7,22 @@ export const CalendarExplainText = () => {
       <div className="calendarExplainTextWhite">
         <div className="whiteCube"></div>
         {Translator(
-          'Fehér: Az egész ház üres és foglalható.',
-          'White: The whole house is free and available for booking.'
+          'Az egész ház üres és foglalható.',
+          'The whole house is free and available for booking.'
         )}
       </div>
       <div className="calendarExplainTextYellow">
         <div className="yellowCube"></div>
         {Translator(
-          'Sárga: egy vagy több szoba foglalt, de még vannak foglalható szobák.',
-          'Yellow: one or more rooms are booked, but there are still available rooms.'
+          'Egy vagy több szoba foglalt, de még vannak foglalható szobák.',
+          'One or more rooms are booked, but there are still available rooms.'
         )}
       </div>
       <div className="calendarExplainTextRed">
         <div className="redCube"></div>
         {Translator(
-          'Piros: Az apartman teljesen foglalt.',
-          'Red: The apartment is fully booked.'
+          'Az apartman teljesen foglalt.',
+          'The apartment is fully booked.'
         )}
       </div>
     </div>
