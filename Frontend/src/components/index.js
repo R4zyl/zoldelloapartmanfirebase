@@ -11,6 +11,7 @@ export * from './ContactUs/ContactUs';
 export * from './Booking/MyCalendar';
 export * from './Booking/EventAdder';
 export * from './Prices/Prices';
+export * from './Prices/PricesExplainText'
 export * from './Footer/Footer';
 export * from './ContactUs/ContactDetails';
 export * from './Translator/Translator';
