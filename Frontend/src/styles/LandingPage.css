@@ -314,6 +314,7 @@ body {
     display: flex;
     max-width: 100vw;
     margin-left: 2vw;
+    margin-top: 20vh;
   }
   .landingContainer2 .landingText2 {
     position: absolute;
@@ -323,7 +324,7 @@ body {
     width: 90vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
-    font-size: 80%;
+    font-size: 120%;
   }
   .landingImgContainer2 {
     display: -webkit-box;
@@ -342,7 +343,7 @@ body {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     left: 5vw;
-    top: 110vh;
+    top: 130vh;
     -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
             box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
   }
@@ -351,7 +352,7 @@ body {
             transform: scale(0.5);
     position: absolute;
     left: -15vw;
-    top: 95vh;
+    top: 115vh;
     -webkit-box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
             box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
   }
@@ -373,7 +374,7 @@ body {
             flex-direction: column;
     width: 100vw;
     max-width: 100vw;
-    margin-top: 5vh;
+    margin-top: 35vh;
     margin-left: 0vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -381,21 +382,19 @@ body {
   }
   .landingContainer3 .landingText3 {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 27.5vh;
+    margin-top: 18.5vh;
     width: 90vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 100%;
-    margin-left: 2vw;
+    margin-left: 6vw;
   }
   .landingContainer3 .landingImgContainer3 {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: -400px;
+    margin-top: -70vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
