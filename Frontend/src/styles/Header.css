@@ -328,9 +328,6 @@ body {
   .languageImgDesktop {
     display: none;
   }
-  .languageImg {
-    margin-left: -10px;
-  }
   .menuImg {
     -webkit-filter: drop-shadow(0px 2.5px 2.5px black);
             filter: drop-shadow(0px 2.5px 2.5px black);
