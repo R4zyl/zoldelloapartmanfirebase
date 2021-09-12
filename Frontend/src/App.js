@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { NotImplementedYet, Header, Login, MyGallery, LandingPage, ContactUs, MyCalendar, Prices,Footer } from './components';
+import { NotImplementedYet, Header, Login, MyGallery, LandingPage, ContactUs, MyCalendar, Prices,Footer,GetLocation } from './components';
 import { useDispatch } from 'react-redux';
 import { loadUserDataAction } from './actions';
 import { auth } from './firebase.js';
@@ -18,6 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {GetLocation()}
         <Header />
         <Switch>
           <Route exact path="/" component={LandingPage} />

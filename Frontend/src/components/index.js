@@ -22,3 +22,4 @@ export * from './Booking/CalendarExplainText';
 export * from './LandingPage/SectionOne';
 export * from './LandingPage/SectionTwo';
 export * from './LandingPage/SectionThree';
+export * from './GetLocation/GetLocation';
