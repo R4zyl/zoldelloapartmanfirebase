@@ -23,3 +23,4 @@ export * from './LandingPage/SectionOne';
 export * from './LandingPage/SectionTwo';
 export * from './LandingPage/SectionThree';
 export * from './GetLocation/GetLocation';
+export * from './CookieConsentBar/CookieConsentBar';

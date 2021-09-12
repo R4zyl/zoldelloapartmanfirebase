@@ -13,7 +13,6 @@ export function GetLocation() {
       return response.json();
     })
     .then(function (json) {
-      console.log(json.country.capital);
       if (json.country.capital !== 'Budapest')
         dispatch(changeLanguageToEngAction());
     });
