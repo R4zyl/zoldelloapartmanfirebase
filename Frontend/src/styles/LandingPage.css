@@ -212,8 +212,7 @@ body {
 }
 
 .landingContainer3 .landingText3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  color: #3d3d3d;
 }
 
 .landingContainer3 .landingImgContainer3 {

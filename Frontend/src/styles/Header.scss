@@ -15,7 +15,7 @@
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .languageImg {
-  margin-left: -8px;
+  margin-right:8px;
 }
 .logoImg {
   display: flex;
@@ -62,9 +62,6 @@
 .languageImgDesktop {
   margin-right: 25px;
   filter: drop-shadow(0px 1.5px 1.5px black);
-}
-.languageImgDesktop:hover {
-  filter: drop-shadow(0px 3px 3px black);
 }
 @media only screen and (min-width: 650px) {
   .navContainer {
