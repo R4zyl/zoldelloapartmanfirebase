@@ -52,7 +52,7 @@ body {
   width: fit-content;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 651px) {
   .landingContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -196,6 +196,7 @@ body {
   display: flex;
   max-width: 70vw;
   margin-left: 30vw;
+  margin-top: 2.9vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -247,7 +248,7 @@ body {
           box-shadow: 0px 0px 6px 1px rgba(0, 88, 45, 0.637);
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 650px) {
   .mapholder2 {
     display: none;
   }
