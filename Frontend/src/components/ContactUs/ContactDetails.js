@@ -2,7 +2,7 @@ import React from 'react';
 import emailicon from '../../assets/emailicon.png';
 import phoneicon from '../../assets/phoneicon.png';
 import addressicon from '../../assets/addressicon.png';
-import { Translator } from '../index';
+import { Translator, GoogleMap } from '../index';
 
 export const ContactDetails = () => {
   return (
@@ -31,16 +31,7 @@ export const ContactDetails = () => {
           'Mátyás király street 4/A., Siófok, 8600'
         )}
       </div>
-      <div className="mapholder">
-        <iframe
-          title="map"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtyqgqLXBaUcRKNqKefvN0e4&key=AIzaSyBQkIJGNiFnQnwRMa-RjU9mBxseYrHvvnM"
-          width="360"
-          height="270"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
+      <GoogleMap className="mapholder" width="360" height="270" />
     </div>
   );
 };

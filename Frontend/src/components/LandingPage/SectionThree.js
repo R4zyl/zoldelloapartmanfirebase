@@ -1,5 +1,5 @@
 import React from 'react';
-import { Translator } from '../index';
+import { Translator,GoogleMap } from '../index';
 import { useHistory } from 'react-router-dom';
 import landingImg from '../../assets/galleryImages/s15.JPG';
 import landingImg2 from '../../assets/galleryImages/s16.JPG';
@@ -37,10 +37,8 @@ export const SectionThree = () => {
             height="240px"
           ></img>
         </div>
-      </div>{' '}
-      <div className="mapholder2">
-      <iframe title="map" width="428" height="250" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtyqgqLXBaUcRKNqKefvN0e4&key=AIzaSyBQkIJGNiFnQnwRMa-RjU9mBxseYrHvvnM"></iframe> 
       </div>
+      <GoogleMap className="mapholder2" width="428" height="250" />
     </div>
   );
 };
