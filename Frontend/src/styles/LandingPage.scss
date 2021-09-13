@@ -35,11 +35,15 @@
       text-align: left;
       font-size: 150%;
       color: black;
+      .landingText {
+        display:flex;
+        flex-direction:column;
+      }
       button {
         margin-top:3vh;
+        margin-left:0px;
         background:rgba(0, 88, 45, 0.808);
         color:white;
-        margin-left:0px;
         font-weight:300;
         box-shadow:$box-shadow-light;
         border-radius:3px;
@@ -210,7 +214,7 @@
       position:absolute;
       margin-left:auto;
       margin-right:auto;
-      margin-top:33.5vh;
+      margin-top:18.5vh;
       width:90vw;
       font-family: 'Oswald', sans-serif;
       font-weight:500;
@@ -228,14 +232,14 @@
       position:absolute;
       transform:scale(0.5);
       left:5vw;
-      top:130vh;
+      top:110vh;
       box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
     }
     .gardenImg2 {
       transform:scale(0.5);
       position:absolute;
       left:-15vw;
-      top:115vh;
+      top:97vh;
       box-shadow: 30px 30px 0px 1px rgba(0, 88, 45, 0.637);
     }
     img:hover{

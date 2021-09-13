@@ -1,7 +1,6 @@
 import React from 'react';
 import { Translator } from '../index';
 import CookieConsent from 'react-cookie-consent';
-import '../../styles/CookieConsentBar.css';
 
 export const CookieConsentBar = () => {
   return (
