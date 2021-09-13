@@ -61,8 +61,8 @@ export const MyCalendar = () => {
         {user ? <EventAdder component={EventAdder} /> : <div></div>}
         <FullCalendar
           height="80vh"
-          editable={true}
-          selectable={true}
+          editable={user ? true:false}
+          selectable={user ? true:false}
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
           dateClick={handleDateClick}
