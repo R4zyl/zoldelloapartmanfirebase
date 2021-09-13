@@ -108,14 +108,14 @@ button.fc-today-button.fc-button.fc-button-primary:active {
   }
   .calendarExplainText {
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 3vh;
     color: black;
     font-weight: 500;
     font-size: 120%;
   }
   .calendarExplainTextWhite {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 5vh;
     font-weight: 500;
     color: black;
     width: -webkit-fit-content;
@@ -138,8 +138,8 @@ button.fc-today-button.fc-button.fc-button-primary:active {
     margin-right: 8px;
   }
   .calendarExplainTextYellow {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 1vh;
     font-weight: 500;
     color: black;
     width: -webkit-fit-content;
@@ -162,8 +162,8 @@ button.fc-today-button.fc-button.fc-button-primary:active {
     margin-right: 8px;
   }
   .calendarExplainTextRed {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 1vh;
     font-weight: 500;
     color: black;
     width: -webkit-fit-content;
@@ -281,6 +281,14 @@ span.fc-icon.fc-icon-chevron-right {
     min-width: 35px;
     min-height: 35px;
     margin-right: 8px;
+  }
+  button.fc-prev-button.fc-button.fc-button-primary {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  button.fc-next-button.fc-button.fc-button-primary {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 /*# sourceMappingURL=MyCalendar.css.map */

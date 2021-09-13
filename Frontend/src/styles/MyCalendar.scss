@@ -55,14 +55,14 @@ button.fc-today-button.fc-button.fc-button-primary:active {
   }
   .calendarExplainText {
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 3vh;
     color: black;
     font-weight: 500;
     font-size: 120%;
   }
   .calendarExplainTextWhite {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 5vh;
     font-weight: 500;
     color: black;;
     width: fit-content;
@@ -78,8 +78,8 @@ button.fc-today-button.fc-button.fc-button-primary:active {
     }
   }
   .calendarExplainTextYellow {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 1vh;
     font-weight: 500;
     color: black;
     width: fit-content;
@@ -95,8 +95,8 @@ button.fc-today-button.fc-button.fc-button-primary:active {
     }
   }
   .calendarExplainTextRed {
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 4vw;
+    margin-top: 1vh;
     font-weight: 500;
     color: black;
     width: fit-content;
@@ -183,5 +183,12 @@ span.fc-icon.fc-icon-chevron-right {
       min-height: 35px;
       margin-right: 8px;
     }
+  }
+
+  button.fc-prev-button.fc-button.fc-button-primary{
+    transform:scale(0.6);
+  }
+  button.fc-next-button.fc-button.fc-button-primary{
+    transform:scale(0.6);
   }
 }
