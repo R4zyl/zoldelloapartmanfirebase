@@ -14,23 +14,29 @@ export const MyCalendar = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.userData);
   const { events } = useSelector((state) => state.events);
-  
+
   const deleteEvent = async (eventdate) => {
     const deleteId = await getDocumentId(eventdate);
     if (deleteId) {
-      database.collection("events").doc(deleteId).delete().then(() => {
-      alert("Foglalás sikeresen törölve");
-  }).catch((error) => {
-      console.error("Error removing document: ", error);
-  });
+      database
+        .collection('events')
+        .doc(deleteId)
+        .delete()
+        .then(() => {
+          alert('Foglalás sikeresen törölve');
+        })
+        .catch((error) => {
+          console.error('Error removing document: ', error);
+        });
     }
-    return ''
+    return '';
   };
 
   const getDocumentId = (eventdate) => {
-    for (let i =0; i<events.length;i++) {
-      if(events[i].start===eventdate) return events[i].eventId
-    } return undefined
+    for (let i = 0; i < events.length; i++) {
+      if (events[i].start === eventdate) return events[i].eventId;
+    }
+    return undefined;
   };
 
   const handleDateClick = (arg) => {
@@ -38,20 +44,22 @@ export const MyCalendar = () => {
   };
 
   useEffect(() => {
-    const cleanup = database.collection('events')
-      .onSnapshot(snapshot => {
-        const listOfEvents = snapshot.docs.map(doc => ({...doc.data(),eventId: doc.id}));
-        dispatch(loadEventsAction(listOfEvents))
-      });
-      
+    const cleanup = database.collection('events').onSnapshot((snapshot) => {
+      const listOfEvents = snapshot.docs.map((doc) => ({
+        ...doc.data(),
+        eventId: doc.id,
+      }));
+      dispatch(loadEventsAction(listOfEvents));
+    });
+
     return () => cleanup();
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="calendarOuterContainer">
-       <div className="calendarExplainText">
+      <div className="calendarExplainText">
         {Translator(
           'A naptáron láthatják a szabad időpontjainkat, foglalási szándék esetében keressenek minket az elérhetőség menüpont alatt emailen vagy telefonon!',
           'The calendar shows the dates available for booking, if you want to book your stay reach out to us per email or phone.'
@@ -61,8 +69,8 @@ export const MyCalendar = () => {
         {user ? <EventAdder component={EventAdder} /> : <div></div>}
         <FullCalendar
           height="80vh"
-          editable={user ? true:false}
-          selectable={user ? true:false}
+          editable={user ? true : false}
+          selectable={user ? true : false}
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
           dateClick={handleDateClick}
@@ -71,7 +79,7 @@ export const MyCalendar = () => {
           eventBackgroundColor="red"
           eventDisplay="background"
         />
-        <CalendarExplainText/>
+        <CalendarExplainText />
       </div>
     </div>
   );

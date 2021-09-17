@@ -47,7 +47,7 @@ export const LanguageSwitcher = ({ height, className }) => {
             src={hunImg}
             onClick={handleHunClick}
             height={height}
-            alt="switch language to english"
+            alt="switch language to hungarian"
           ></img>
           <img
             className={className}
@@ -57,7 +57,7 @@ export const LanguageSwitcher = ({ height, className }) => {
             style={flagStyle}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            alt="váltás magyar nyelvre"
+            alt="váltás angol nyelvre"
           ></img>
         </div>
       ) : (
@@ -70,14 +70,14 @@ export const LanguageSwitcher = ({ height, className }) => {
             style={flagStyle}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            alt="switch language to english"
+            alt="switch language to hungarian"
           ></img>
           <img
             className={className}
             src={engImg}
             onClick={handleEngClick}
             height={height}
-            alt="váltás magyar nyelvre"
+            alt="váltás angol nyelvre"
           ></img>
         </div>
       )}

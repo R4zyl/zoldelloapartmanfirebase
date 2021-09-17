@@ -17,18 +17,20 @@ export const EventAdder = () => {
   const handleSubmit = async (submitEvent) => {
     submitEvent.preventDefault();
     validateAdminInput();
-    database.collection('events').add({
-      title: title,
-      start: start,
-      end: end,
-      color:color
-  })
-  .then((docRef) => {
-      alert('Foglalás sikeresen hozzáadva!');
-  })
-  .catch((error) => {
-      alert('Foglalás hozzáadása sikertelen.');
-  });
+    database
+      .collection('events')
+      .add({
+        title: title,
+        start: start,
+        end: end,
+        color: color,
+      })
+      .then((docRef) => {
+        alert('Foglalás sikeresen hozzáadva!');
+      })
+      .catch((error) => {
+        alert('Foglalás hozzáadása sikertelen.');
+      });
   };
 
   const changeColor = (event) => {
