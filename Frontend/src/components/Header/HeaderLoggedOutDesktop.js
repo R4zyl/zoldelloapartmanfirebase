@@ -38,6 +38,7 @@ export const HeaderLoggedOutDesktop = () => {
         ></img>
       </div>
       <HeaderButton
+        data-testid="0003"
         innerText={
           <span>
             <span>
