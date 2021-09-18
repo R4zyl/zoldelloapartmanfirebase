@@ -193,8 +193,8 @@ body {
     width: 50px;
   }
   .contactIconsHolder .phoneNumberDesktop {
-    overflow: hidden;
-    width: 0%;
+    opacity: 0;
+    width: 0;
     font-weight: 500;
   }
   .contactIconsHolder:hover {
@@ -210,7 +210,10 @@ body {
     background: rgba(0, 88, 45, 0.849);
   }
   .contactIconsHolder:hover .phoneNumberDesktop {
+    opacity: 1;
     width: 100%;
+    -webkit-transition: opacity 400ms ease-in,width 200ms ease-in-out;
+    transition: opacity 400ms ease-in,width 200ms ease-in-out;
   }
   button {
     border: none;

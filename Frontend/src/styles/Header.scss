@@ -100,8 +100,8 @@
     max-height: 40px;
     width: 50px;
     .phoneNumberDesktop {
-      overflow: hidden;
-      width: 0%;
+      opacity:0;
+      width:0;
       font-weight: 500;
     }
   }
@@ -113,7 +113,9 @@
     width: fit-content;
     background: rgba(0, 88, 45, 0.849);
     .phoneNumberDesktop {
-      width: 100%;
+      opacity:1;
+      width:100%;
+      transition:opacity 400ms ease-in,width 200ms ease-in-out ;
     }
   }
   button {
