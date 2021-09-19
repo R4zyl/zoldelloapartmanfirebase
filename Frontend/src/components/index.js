@@ -5,6 +5,7 @@ export * from './Header/HeaderWhenNotLoggedIn';
 export * from './Header/HeaderWhenLoggedIn';
 export * from './Header/HeaderLoggedInDesktop';
 export * from './Header/HeaderLoggedOutDesktop';
+export * from './Header/LogoImg';
 export * from './Header/LanguageSwitcher';
 export * from './Login/Login';
 export * from './LandingPage/LandingPage';

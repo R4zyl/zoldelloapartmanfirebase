@@ -9,6 +9,7 @@ import menuImg from '../../assets/menu.png';
 import { Translator } from '../index';
 import { HeaderLoggedInDesktop } from '../index';
 import { auth } from '../../firebase';
+import { LogoImg } from '../index';
 
 export const HeaderWhenLoggedIn = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -72,6 +73,7 @@ export const HeaderWhenLoggedIn = () => {
           </div>
         </Menu>
       </div>
+      <LogoImg className="mobileLogoImg"/>
       <HeaderLoggedInDesktop />
     </div>
   );

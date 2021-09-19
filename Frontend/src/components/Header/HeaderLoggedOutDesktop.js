@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { HeaderButton } from '../';
-import logoImg from '../../assets/logo.png';
 import { Translator } from '../index';
+import { LogoImg } from '../index';
 
 export const HeaderLoggedOutDesktop = () => {
   const history = useHistory();
@@ -12,10 +12,6 @@ export const HeaderLoggedOutDesktop = () => {
 
   const handleGallery = () => {
     history.push('/gallery');
-  };
-
-  const handleHome = () => {
-    history.push('/');
   };
 
   const handleContactus = () => {
@@ -28,15 +24,7 @@ export const HeaderLoggedOutDesktop = () => {
 
   return (
     <div className="navContainerDesktop">
-      <div className="logoImg">
-        <img
-          onClick={handleHome}
-          src={logoImg}
-          height="auto"
-          max-width="70px"
-          alt="logo"
-        ></img>
-      </div>
+      <LogoImg className="logoImg"/>
       <HeaderButton
         data-testid="0003"
         innerText={

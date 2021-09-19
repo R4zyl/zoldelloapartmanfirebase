@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { HeaderButton } from '../';
 import { auth } from '../../firebase';
 import { Translator } from '../index';
+import { LogoImg } from '../index';
 
 export const HeaderLoggedInDesktop = () => {
     const history = useHistory();
@@ -14,7 +15,9 @@ export const HeaderLoggedInDesktop = () => {
     auth.signOut();
     history.push('/');
   };
+  return(
     <div className="navContainerDesktop">
+      <LogoImg className="logoImg"/>
         <HeaderButton
           innerText={
             <span>
@@ -36,5 +39,6 @@ export const HeaderLoggedInDesktop = () => {
           onClickEvent={handleLogOut}
         />
       </div>
+  )
 }
 

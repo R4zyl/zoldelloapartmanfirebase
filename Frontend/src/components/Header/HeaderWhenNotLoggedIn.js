@@ -7,8 +7,8 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import '../../styles/Header.css';
 import menuImg from '../../assets/menu.png';
-import logoMobile from '../../assets/logoMobile.png';
 import phoneIconDesktop from '../../assets/phoneIconDesktop.png';
+import { LogoImg } from '../index';
 
 export function HeaderWhenNotLoggedIn() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -95,15 +95,7 @@ export function HeaderWhenNotLoggedIn() {
           </div>
         </Menu>
       </div>
-      <div className="mobileLogoImg">
-        <img
-          onClick={handleHome}
-          src={logoMobile}
-          height="auto"
-          max-width="70px"
-          alt="logo"
-        ></img>
-      </div>
+      <LogoImg className="mobileLogoImg"/>
       <HeaderLoggedOutDesktop />
       <LanguageSwitcher height="35px" className="languageImgDesktop" />
       <div className="contactIconsHolder"><div className="phoneNumberDesktop">+36 30 325 1661</div><img src={phoneIconDesktop} height="32px" alt="phone number icon"></img></div>
