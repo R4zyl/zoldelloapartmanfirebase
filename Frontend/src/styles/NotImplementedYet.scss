@@ -1,0 +1,39 @@
+@import './presets';
+@import './variables';
+@import './globals';
+
+.notFoundContainer{
+    display:flex;
+    h1{
+        color:$dark-green;
+    }
+    .notFoundTextContainer{
+        margin-left:55vw;
+        margin-top:13vh;
+        font-size:200%;
+    }
+
+    button{
+        border:2px solid $dark-green;
+    }
+}
+
+@media only screen and (max-width: 630px) { 
+    .notFoundContainer{
+        display:flex;
+        justify-content: center;
+        margin-top:10vh;
+        h1{
+            color:$dark-green;
+        }
+        .notFoundTextContainer{
+            margin-left:0vw;
+            margin-top:0vh;
+            font-size:150%;
+        }
+    
+        button{
+            border:2px solid $dark-green;
+        }
+    }
+}

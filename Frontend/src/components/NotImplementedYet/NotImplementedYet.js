@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import '../../styles/NotImplementedYet.css';
 
 export const NotImplementedYet = () => {
   const history = useHistory();
@@ -9,10 +10,13 @@ export const NotImplementedYet = () => {
   };
 
   return (
-    <div>
+    <div className="notFoundContainer">
+        <div className="notFoundTextContainer">
+        <h1>404</h1>
         <h2>Sorry</h2>
-        <p>Not implemented yet</p>
+        <p>This page was not found</p>
         <button type="button" onClick={handleClick}>Go Home!</button>
+        </div>
     </div>
   );
 };
