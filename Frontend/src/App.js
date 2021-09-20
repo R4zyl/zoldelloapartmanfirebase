@@ -4,6 +4,7 @@ import { NotImplementedYet, Header, Login, LandingPage, ContactUs, MyCalendar, P
 import { useDispatch } from 'react-redux';
 import { loadUserDataAction } from './actions';
 import { auth } from './firebase.js';
+import { Helmet } from 'react-helmet'
 import './styles/App.css';
 
 const Gallery = lazy(() => import('./components/GalleryReroute'));
@@ -21,6 +22,10 @@ function App() {
     <Router>
       <div className="App">
         {GetLocation()}
+        <Helmet>
+    <title>Zöldellő Apartman Siófok</title>
+    <meta name="description" content="Apartmanunk a legjobb helyen, 150 méterre van a Balaton aranypartjától és az éjszakai élet központjától, a Petőfi sétánytól, mégis zöld, nyugodt, csendes övezetben." />
+  </Helmet>
         <Header />
         <CookieConsentBar />
         <Suspense fallback={<div><Loader /></div>}>
