@@ -273,7 +273,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     max-width: 99vw;
-    gap: 5vh;
+    gap: 3vh;
     max-width: 99vw;
   }
   .landingContainer img {
@@ -327,7 +327,7 @@ body {
   }
   .landingContainer2 .landingText2 {
     position: absolute;
-    margin-left: auto;
+    margin-left: 2vw;
     margin-right: auto;
     margin-top: 18.5vh;
     width: 90vw;
@@ -391,7 +391,7 @@ body {
   }
   .landingContainer3 .landingText3 {
     position: absolute;
-    margin-top: 18.5vh;
+    margin-top: 14.5vh;
     width: 90vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
