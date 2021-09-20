@@ -1,0 +1,1 @@
+export { MyGallery as default } from "./index";

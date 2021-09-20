@@ -1,7 +1,6 @@
 import React from 'react';
 import { LanguageSwitcher, HeaderLoggedOutDesktop } from '../index';
 import '../../styles/Header.css';
-
 import phoneIconDesktop from '../../assets/phoneIconDesktop.png';
 import { LogoImg } from '../index';
 import { MobileMenu } from '../index';

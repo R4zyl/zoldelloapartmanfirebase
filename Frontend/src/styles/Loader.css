@@ -1,0 +1,12 @@
+.loaderContainer {
+  margin-left: 63vw;
+  margin-top: 40vh;
+}
+
+@media only screen and (max-width: 650px) {
+  .loaderContainer {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
+/*# sourceMappingURL=Loader.css.map */
