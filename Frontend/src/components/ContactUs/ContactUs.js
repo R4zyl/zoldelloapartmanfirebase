@@ -41,13 +41,14 @@ export const ContactUs = () => {
         <input
           className="input"
           type="email"
-          placeholder="E-mail"
+          placeholder="Email"
           value={email}
           onChange={(changeEvent) => {
             setEmail(changeEvent.target.value);
           }}
         />
         <input
+          data-testid="0005"
           className="input"
           type="text"
           placeholder={Translator('Név', 'Your name')}
@@ -65,7 +66,7 @@ export const ContactUs = () => {
             setMessage(changeEvent.target.value);
           }}
         />
-        <button className="contactFormButton" type="submit">
+        <button data-testid="0006" className="contactFormButton" type="submit">
           {Translator('Üzenet küldése', 'Send message')}
         </button>
       </form>
