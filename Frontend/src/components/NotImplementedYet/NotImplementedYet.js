@@ -13,8 +13,8 @@ export const NotImplementedYet = () => {
     <div className="notFoundContainer">
         <div className="notFoundTextContainer">
         <h1>404</h1>
-        <h2>Sorry</h2>
-        <p>This page was not found</p>
+        <p title="underTitle">Sorry</p>
+        <p title="explainText">This page was not found</p>
         <button type="button" onClick={handleClick}>Go Home!</button>
         </div>
     </div>
