@@ -209,6 +209,8 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     background: rgba(0, 88, 45, 0.849);
+    cursor: -webkit-grab;
+    cursor: grab;
   }
   .contactIconsHolder:hover .phoneNumberDesktop {
     opacity: 1;
