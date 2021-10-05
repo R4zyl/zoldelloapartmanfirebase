@@ -154,7 +154,7 @@ body {
   }
   .navContainerDesktop {
     position: fixed;
-    left: 0px;
+    left: -30vw;
     top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;

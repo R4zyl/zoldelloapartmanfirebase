@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useRef,useEffect} from 'react';
 import { useHistory } from 'react-router-dom';
 import { HeaderButton } from '../';
 import { Translator } from '../index';
 import { LogoImg } from '../index';
+import { gsap } from "gsap";
 
 export const HeaderLoggedOutDesktop = () => {
   const history = useHistory();
+  const sideHeaderRef= useRef();
   const handlePrices = () => {
     history.push('/prices');
   };
@@ -21,9 +23,11 @@ export const HeaderLoggedOutDesktop = () => {
   const handleCalendar = () => {
     history.push('/calendar');
   };
-
+  useEffect(() => {
+    gsap.to(sideHeaderRef.current, { x: '30vw' });
+  }, []);
   return (
-    <div className="navContainerDesktop">
+    <div className="navContainerDesktop" ref={sideHeaderRef}>
       <LogoImg className="logoImg"/>
       <HeaderButton
         data-testid="0003"
