@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
@@ -154,7 +155,7 @@ body {
   }
   .navContainerDesktop {
     position: fixed;
-    left: -30vw;
+    left: 30vw;
     top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -188,6 +189,7 @@ body {
     background: rgba(0, 88, 45, 0.733);
     padding: 4px;
     position: absolute;
+    z-index: -1;
     left: 30vw;
     border-radius: 0px 8px 8px 0px;
     max-height: 40px;

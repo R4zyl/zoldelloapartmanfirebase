@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useRef, useEffect  } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import engImg from '../../assets/eng.png';
 import hunImg from '../../assets/hun.png';
@@ -6,15 +6,24 @@ import {
   changeLanguageToEngAction,
   changeLanguageToHunAction,
 } from '../../actions';
+import { gsap } from 'gsap';
 
 export const LanguageSwitcher = ({ height, className }) => {
   const { language } = useSelector((state) => state.language);
+  const languageHolderRef = useRef();
   const dispatch = useDispatch();
   const [flagStyle, setFlagStyle] = useState({
     filter: 'grayscale(1) brightness(99%)',
     transition: 'filter 0.5s ease-in-out',
   });
-
+  useEffect(() => {
+    gsap.fromTo(
+      languageHolderRef.current,
+      { y: '-40vh' },
+      { delay:3.2,duration: 1.2, y: '0vh' }
+    );
+    
+  }, []);
   const handleEngClick = () => {
     dispatch(changeLanguageToEngAction());
     setFlagStyle(marked);
@@ -39,7 +48,7 @@ export const LanguageSwitcher = ({ height, className }) => {
     filter: 'grayscale(0.2) brightness(94%)',
   };
   return (
-    <div>
+    <div ref={languageHolderRef}>
       {language === 'hun' ? (
         <div>
           <img
@@ -61,7 +70,7 @@ export const LanguageSwitcher = ({ height, className }) => {
           ></img>
         </div>
       ) : (
-        <div>
+        <div ref={languageHolderRef}>
           <img
             className={className}
             src={hunImg}

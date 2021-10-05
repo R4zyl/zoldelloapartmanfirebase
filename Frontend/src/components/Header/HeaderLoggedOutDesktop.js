@@ -24,7 +24,7 @@ export const HeaderLoggedOutDesktop = () => {
     history.push('/calendar');
   };
   useEffect(() => {
-    gsap.to(sideHeaderRef.current, { x: '30vw' });
+    gsap.fromTo(sideHeaderRef.current, { x: '-80vw' }, {delay:1.35,duration:1.5,x:'-30vw'});
   }, []);
   return (
     <div className="navContainerDesktop" ref={sideHeaderRef}>

@@ -75,7 +75,7 @@
   }
   .navContainerDesktop {
     position: fixed;
-    left: -30vw;
+    left: 30vw;
     top: 0px;
     display: flex;
     flex-direction: column;
@@ -97,6 +97,7 @@
     background: rgba(0, 88, 45, 0.733);
     padding: 4px;
     position: absolute;
+    z-index:-1;
     left: 30vw;
     border-radius: 0px 8px 8px 0px;
     max-height: 40px;
