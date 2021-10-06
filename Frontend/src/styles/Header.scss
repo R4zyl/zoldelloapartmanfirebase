@@ -19,12 +19,16 @@
 }
 .logoImg {
   display: flex;
-  margin-top: -180px;
-  margin-bottom: 55px;
+  margin-top: -160px;
+  margin-bottom: 255px;
   align-items: center;
   margin-left: 40px;
-  img {
-    max-width: 150px;
+  .logoHolder{
+    display:flex;
+    img{
+      position:absolute;
+      max-width: 150px;
+    }
   }
 }
 .mobileLogoImg {

@@ -76,15 +76,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -180px;
-  margin-bottom: 55px;
+  margin-top: -160px;
+  margin-bottom: 255px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 40px;
 }
 
-.logoImg img {
+.logoImg .logoHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoImg .logoHolder img {
+  position: absolute;
   max-width: 150px;
 }
 

@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import '../../styles/Footer.css';
 import { Translator } from '../index';
 import { gsap } from "gsap";
+
 export const Footer = () => {
   const history = useHistory();
   const footerRef= useRef();
@@ -16,9 +17,11 @@ export const Footer = () => {
   const redirectToFacebook = () => {
     window.location.href = 'https://www.facebook.com/Z%C3%B6ldell%C5%91-Apartman-Si%C3%B3fok-100883982263233'
   }
+  
   useEffect(() => {
     gsap.fromTo(footerRef.current, { x: '-130vw' }, {delay:2.5,duration:1.2,x:'-30vw'});
   }, []);
+
   return (
     <div className="footerContainer" ref={footerRef}>
       <div className="footerIconHolder">

@@ -20,7 +20,7 @@ export const LanguageSwitcher = ({ height, className }) => {
     gsap.fromTo(
       languageHolderRef.current,
       { y: '-40vh' },
-      { delay:3.2,duration: 1.2, y: '0vh' }
+      { delay:0.3,duration: 0.4, y: '0vh' }
     );
     
   }, []);
